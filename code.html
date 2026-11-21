@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Caffiora — Rich &amp; Aromatic Coffee</title>
+<!-- Google Fonts for Editorial Luxury Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config Customization -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            caffiora: {
+              cream: '#ECE4D8',
+              'cream-light': '#F5EFE6',
+              'cream-dark': '#DFD5C6',
+              brown: '#231710',
+              'brown-light': '#3E2A20',
+              muted: '#7C7267',
+              accent: '#B08E6B'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="typography">
+    .font-editorial-italic {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 500;
+    }
+    .badge-rotate {
+      animation: spin 20s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+<style data-purpose="decorations">
+    /* Subtle glass morphism & textured earthy gradient */
+    .glass-card {
+      background: rgba(245, 239, 230, 0.45);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(223, 213, 198, 0.6);
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(236, 228, 216, 0) 70%);
+    }
+    .floating-bean {
+      filter: drop-shadow(0 15px 15px rgba(35, 23, 16, 0.18));
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="bg-[#ECE4D8] text-caffiora-brown font-sans antialiased selection:bg-caffiora-brown selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-between z-30 relative" data-purpose="main-header">
+<!-- Brand Logo -->
+<a class="text-3xl lg:text-4xl font-editorial-italic tracking-tight text-caffiora-brown hover:opacity-85 transition-opacity" data-purpose="brand-logo" href="#">
+      Caffiora
+    </a>
+<!-- Navigation Menu -->
+<nav class="hidden md:flex items-center space-x-10 text-sm font-normal text-caffiora-brown/90" data-purpose="desktop-nav">
+<a class="hover:text-caffiora-brown hover:underline underline-offset-8 transition-all" href="#products">Products</a>
+<a class="hover:text-caffiora-brown hover:underline underline-offset-8 transition-all" href="#features">Features</a>
+<a class="hover:text-caffiora-brown hover:underline underline-offset-8 transition-all" href="#about">About us</a>
+<a class="hover:text-caffiora-brown hover:underline underline-offset-8 transition-all" href="#reviews">Reviews</a>
+</nav>
+<!-- Header Action CTA Button -->
+<a class="inline-flex items-center px-6 py-2.5 rounded-full bg-caffiora-brown text-[#ECE4D8] text-xs uppercase tracking-wider font-medium hover:bg-caffiora-brown-light transition-all shadow-sm" href="#collection">
+      See Collection →
+    </a>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative min-h-[640px] lg:min-h-[740px] flex flex-col items-center justify-between pt-8 pb-16 overflow-hidden" data-purpose="hero-section">
+<!-- Glow ambient background -->
+<div class="absolute inset-0 hero-glow pointer-events-none"></div>
+<!-- Hero Headline Centerpiece -->
+<div class="relative z-20 text-center max-w-3xl px-4 mt-4">
+<p class="text-xs uppercase tracking-[0.25em] text-caffiora-muted font-medium mb-3">
+          Elevate Your Day with
+        </p>
+<h1 class="text-5xl md:text-7xl lg:text-[5.4rem] leading-[1.05] font-editorial-italic tracking-normal text-caffiora-brown uppercase">
+          Rich &amp; Aromatic<br/>Coffee
+        </h1>
+</div>
+<!-- Floating Hands with Iced Coffee Cups (Left & Right) -->
+<div class="absolute inset-x-0 bottom-4 pointer-events-none max-w-7xl mx-auto h-full flex justify-between items-end px-4 z-10">
+<!-- Left Cup: Dark cold brew held by hand -->
+<div class="relative w-48 sm:w-64 md:w-80 lg:w-96 translate-y-8 sm:translate-y-4 -translate-x-4 lg:-translate-x-6">
+<img alt="Cold brew iced coffee cup held in hand" class="w-full h-auto object-contain rounded-2xl drop-shadow-2xl mix-blend-multiply opacity-95 filter contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiNWh5m4gGMWU2YP7vhFZIcRw_OWruG0ExbB0EAHb34DHpvLjS9p4Y1y4idVrAZZ2IA-hBeJRF91F_N448UPJkGFKG25aZl_Of8a881RQdvv2xCc1YVUpumvAf2x7T7oNbuGs4FReJb-tyvoAqAW4szOnabG9A8GNfQ6xHNFC_Gcn5yfg2E0ds2O4rCVhgxsLUsJXyQ5oWEJiqzU7Srsk9GEtKR271msQQEBcW4HXR"/>
+<span class="absolute top-1/2 left-1/4 -translate-x-1/2 font-serif text-white/90 text-sm tracking-widest font-semibold uppercase transform -rotate-6">Caffiora</span>
+</div>
+<!-- Right Cup: Creamy iced latte with sleeve held by hand -->
+<div class="relative w-48 sm:w-64 md:w-80 lg:w-96 translate-y-8 sm:translate-y-4 translate-x-4 lg:translate-x-6">
+<img alt="Iced milk coffee held by hand" class="w-full h-auto object-contain rounded-2xl drop-shadow-2xl mix-blend-multiply opacity-95 filter contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwdVI-28Y5E7Bhc1sgQZ5iBMqWI7hUG-6uuoaNwEroQjWElYzRQLq9EPPLnluOoF4-Mp5aZfJ-4zgnzs_Nj61XbYr0wMI2VtlaAGGVH0KrYwZoe3MKJIVy-2fK3upVMQ4-ub-ZWRjsZc8GysDBy0NWQ86O_Kdbr2gU5EnOCycKBfKlXXAi0tVZygoPivOZhtat3cPop2FEo4bY6f5xyGqS8vLZt6AMWG_4z9SxdwVP"/>
+<div class="absolute top-[45%] right-1/4 text-center">
+<span class="font-serif text-white font-medium text-lg tracking-wider block">Caffiora</span>
+<span class="text-[9px] uppercase tracking-widest text-white/80 block">Coffee</span>
+</div>
+</div>
+</div>
+<!-- Circular Badge: "Browse Collection" Rotating Stamp -->
+<div class="relative z-20 mt-12 mb-2 flex items-center justify-center" data-purpose="rotating-stamp">
+<a class="group relative w-32 h-32 rounded-full border border-dashed border-caffiora-brown/40 flex items-center justify-center p-2 bg-[#ECE4D8]/80 backdrop-blur-sm shadow-sm transition-transform duration-500 hover:scale-105" href="#collection">
+<!-- Circular Curved Text Simulated SVG -->
+<svg class="badge-rotate w-full h-full text-caffiora-brown fill-current" viewbox="0 0 100 100">
+<path d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="transparent" id="circlePath"></path>
+<text class="text-[9.5px] uppercase tracking-[0.2em] font-sans">
+<textpath href="#circlePath" startoffset="0%">
+                • Browse Collection • Browse Collection
+              </textpath>
+</text>
+</svg>
+<!-- Center Arrow -->
+<span class="absolute inset-0 flex items-center justify-center text-xl text-caffiora-brown group-hover:translate-y-1 transition-transform">
+            ↓
+          </span>
+</a>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: PartnerLogos -->
+<section class="border-y border-caffiora-cream-dark/60 bg-[#E8DFD5]/40 py-8 px-6" data-purpose="partner-logos">
+<div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center sm:justify-between gap-8 md:gap-12 opacity-50 grayscale hover:opacity-75 transition-opacity">
+<span class="font-serif font-black tracking-widest text-2xl uppercase">N</span>
+<span class="font-sans font-black tracking-tighter text-xl uppercase">LAVAZZA</span>
+<span class="font-serif font-bold text-sm tracking-widest border-2 border-current px-2.5 py-1 rounded-full uppercase">Starbucks</span>
+<span class="font-serif italic font-bold text-xl uppercase tracking-wider">Peet's</span>
+<span class="font-sans font-bold text-2xl lowercase italic tracking-tight">illy</span>
+</div>
+</section>
+<!-- END: PartnerLogos -->
+<!-- BEGIN: WhyOurBeansAreBest -->
+<section class="max-w-7xl mx-auto px-6 py-20 relative" data-purpose="features-overview" id="features">
+<!-- Section Title & Link Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+<h2 class="text-4xl md:text-5xl lg:text-6xl font-editorial-italic text-caffiora-brown tracking-tight">
+          Why our beans are best
+        </h2>
+<a class="text-xs uppercase tracking-wider font-semibold text-caffiora-brown hover:opacity-70 transition-opacity inline-flex items-center gap-1" href="#brands">
+          See Brands →
+        </a>
+</div>
+<!-- Feature Cards Grid (3 Columns) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+<!-- Card 1: Freshly Roasted -->
+<div class="glass-card rounded-2xl p-8 flex flex-col justify-between h-80 shadow-sm hover:translate-y-[-4px] transition-all">
+<div class="w-10 h-10 rounded-full border border-caffiora-brown/20 flex items-center justify-center text-caffiora-brown">
+<!-- Refresh Icon -->
+<svg class="w-5 h-5 stroke-[1.5]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-3xl font-editorial-italic text-caffiora-brown mb-3">Freshly<br/>Roasted</h3>
+<p class="text-xs leading-relaxed text-caffiora-muted">
+              Our beans are roasted in small batches for peak freshness, ensuring every cup bursts with bold flavor.
+            </p>
+</div>
+</div>
+<!-- Card 2: Ethically Sourced -->
+<div class="glass-card rounded-2xl p-8 flex flex-col justify-between h-80 shadow-sm hover:translate-y-[-4px] transition-all">
+<div class="w-10 h-10 rounded-full border border-caffiora-brown/20 flex items-center justify-center text-caffiora-brown">
+<!-- Sprout / Plant Icon -->
+<svg class="w-5 h-5 stroke-[1.5]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 19V6m0 0c0-2 2-3 4-3s4 1 4 3-2 3-4 3c-2 0-4-1-4-3zm0 0c0-2-2-3-4-3s-4 1-4 3 2 3 4 3c2 0 4-1 4-3z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-3xl font-editorial-italic text-caffiora-brown mb-3">Ethically<br/>Sourced</h3>
+<p class="text-xs leading-relaxed text-caffiora-muted">
+              We partner directly with farmers for sustainable practices, fair trade, and quality beans that support communities.
+            </p>
+</div>
+</div>
+<!-- Card 3: Unique Blends -->
+<div class="glass-card rounded-2xl p-8 flex flex-col justify-between h-80 shadow-sm hover:translate-y-[-4px] transition-all">
+<div class="w-10 h-10 rounded-full border border-caffiora-brown/20 flex items-center justify-center text-caffiora-brown">
+<!-- Heartbeat / Aroma Icon -->
+<svg class="w-5 h-5 stroke-[1.5]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-3xl font-editorial-italic text-caffiora-brown mb-3">Unique<br/>Blends</h3>
+<p class="text-xs leading-relaxed text-caffiora-muted">
+              From smooth single-origins to adventurous blends, we craft a variety of roasts tailored to your taste.
+            </p>
+</div>
+</div>
+</div>
+<!-- Floating Coffee Beans Decoration -->
+<div class="relative py-12 flex justify-center items-center pointer-events-none opacity-85">
+<img alt="Floating roasted coffee beans" class="w-full max-h-48 object-cover mix-blend-multiply floating-bean mask-image rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoJxwo0etvoFHnWc5BOBKIzpxtTm1Wt2o4SbS0SqR7lgK9RX64tP8z3W2z_8Kj3I_JOvK1kHOdFY0CS17UjTrJ7_0OfHf-DZ9ewstH2zfISvPN-fPX99b7Zo7Dh89a1oTRhOcAYeoyYfVItXlS0GZag7JIFWGNLBO9bY8XszqYwjbpY8AljE-e4jR_4mAC10EBSrQkw3xpmJP8gef7KjtDarwknpDxn73e-WFJTFV7"/>
+</div>
+</section>
+<!-- END: WhyOurBeansAreBest -->
+<!-- BEGIN: WhyChooseUs -->
+<section class="max-w-7xl mx-auto px-6 py-16" data-purpose="why-choose-us">
+<div class="border-t border-caffiora-cream-dark/80 pt-10 mb-14">
+<span class="text-xs uppercase tracking-widest text-caffiora-muted font-medium">Why choose us</span>
+</div>
+<div class="space-y-24">
+<!-- Story Block 01: Quality Craftsmanship -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="max-w-md lg:pr-8">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-caffiora-brown text-[#ECE4D8] text-xs font-semibold mb-6">
+              01
+            </span>
+<h3 class="text-4xl sm:text-5xl font-editorial-italic text-caffiora-brown mb-6 leading-tight">
+              Quality<br/>Craftsmanship
+            </h3>
+<p class="text-xs sm:text-sm text-caffiora-muted leading-relaxed">
+              At Caffiora, we take pride in every roast. Our beans are carefully sourced and roasted by skilled artisans using precise methods. Every bag is an investment in quality and flavor that lasts.
+            </p>
+</div>
+<!-- Artistically Tilted Iced Beverage Cup -->
+<div class="flex justify-center relative">
+<div class="relative max-w-sm rotate-6 transform hover:rotate-3 transition-transform duration-700">
+<img alt="Caffiora iced drink with cold foam" class="rounded-3xl shadow-2xl mix-blend-multiply object-cover w-full h-[380px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsgSdzPbDnp73yy22aK6nGAqcgvinAJf1GCltgcNVOal1HXow04_m1gi8hXcRkT0i5r454HsEi_o68mJnxcyGr4t9X6Gti-mvW2u7CgSuYnNHnpfYTgAxuQw1H7bF28VtMiF4wBraK63I5HMKYiZaY7grp85Rgzkl6jsMX7z_8MbcaV-y4FQ9OyH9DuXjPyQY69CWGxpsceys-9nwsdNPKJczJMEREEHP_ANDHu5gU"/>
+<span class="absolute bottom-12 left-10 font-editorial-italic text-white text-3xl font-medium tracking-wide drop-shadow-md">
+                Caffiora
+              </span>
+</div>
+</div>
+</div>
+<!-- Story Block 02: Style for Every Sip -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Artistically Tilted Cold Glass (Left) -->
+<div class="order-2 lg:order-1 flex justify-center relative">
+<div class="relative max-w-sm -rotate-6 transform hover:-rotate-2 transition-transform duration-700">
+<img alt="Iced cold brew coffee cup" class="rounded-3xl shadow-2xl mix-blend-multiply object-cover w-full h-[380px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBldVw-y2lN41Fa0kkJiQFLpjlOBAhjvlEk-4D3cke-5MZ7UiZ1asfmt2CzGAPfYPPg7H2in83w4WPPLwi_VHZa8Z3lo1kwEQRQpBhA-dG0EO0Y-pJ-wRt6MGjHSnktMopl92p6f7cVO9Q2o5GTW3hyniqIk9ej9wad_6itndr3YNdtS-vTInPyb5gRUO7zD2xF7ZNeq_ZYkVrOdKf_gIAP4zCMbjnMwMOe2FJkThDT"/>
+<span class="absolute bottom-10 right-8 font-editorial-italic text-white text-3xl font-medium tracking-wide drop-shadow-md">
+                Caffiora
+              </span>
+</div>
+</div>
+<!-- Content (Right) -->
+<div class="order-1 lg:order-2 max-w-md lg:pl-8">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-caffiora-brown text-[#ECE4D8] text-xs font-semibold mb-6">
+              02
+            </span>
+<h3 class="text-4xl sm:text-5xl font-editorial-italic text-caffiora-brown mb-6 leading-tight">
+              Style for<br/>Every Sip
+            </h3>
+<p class="text-xs sm:text-sm text-caffiora-muted leading-relaxed">
+              From classic espresso lovers to cold brew enthusiasts, our diverse range of roasts and brewing options means there’s something for every coffee drinker.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: WhyChooseUs -->
+<!-- BEGIN: ExploreCollection -->
+<section class="max-w-7xl mx-auto px-6 py-20 border-t border-caffiora-cream-dark/80" data-purpose="product-collection" id="collection">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
+<div>
+<h2 class="text-4xl md:text-5xl lg:text-6xl font-editorial-italic text-caffiora-brown">
+            Explore our collection
+          </h2>
+</div>
+<div class="max-w-xs text-xs text-caffiora-muted leading-relaxed">
+          from signature blends and single-origin roasts to brewing gear and accessories.
+        </div>
+</div>
+<!-- Filter Categories & Shop All Link -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-caffiora-cream-dark pb-4 mb-12 gap-4">
+<!-- Tabs -->
+<div class="flex items-center space-x-6 text-xs sm:text-sm font-medium">
+<button class="text-caffiora-brown border-b-2 border-caffiora-brown pb-4 -mb-4 font-semibold">Popular</button>
+<button class="text-caffiora-muted hover:text-caffiora-brown transition-colors">Espresso</button>
+<button class="text-caffiora-muted hover:text-caffiora-brown transition-colors">Cold Brew</button>
+<button class="text-caffiora-muted hover:text-caffiora-brown transition-colors">Light Roast</button>
+<button class="text-caffiora-muted hover:text-caffiora-brown transition-colors">Dark Roast</button>
+</div>
+<!-- Link to full store -->
+<a class="text-xs font-semibold uppercase tracking-wider text-caffiora-brown hover:underline inline-flex items-center" href="#all">
+          Shop All →
+        </a>
+</div>
+<!-- Product Cards Grid (3 Items) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="flex flex-col group" data-purpose="product-card">
+<!-- Card Image & Rating -->
+<div class="relative bg-[#E3D9CC]/50 rounded-2xl p-6 pb-4 flex flex-col items-center justify-between min-h-[380px] border border-caffiora-cream-dark/60 group-hover:shadow-md transition-shadow">
+<div class="w-full flex justify-end">
+<span class="inline-flex items-center gap-1 text-xs font-medium text-caffiora-brown">
+                ★ 4.9
+              </span>
+</div>
+<!-- Beverage Visual -->
+<div class="my-auto py-2">
+<img alt="Mocha Swirl Brew" class="w-36 h-48 object-cover rounded-xl mix-blend-multiply group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2YlF9-bmMA-Q48FA7JIPE2mlOW2xQGbGhWApuTuNU6jMUkt281UHf0L65PG11DmK8WexdEcLX_qqGRNFqmU50IUT0ojbvyM4zcjvbwr1N8sTiCuJt-ccsWPUiskSFjcnkp3jZFL0Q091mNGgTpdY-GiG3FJ-qQjVWnMON8XW33ceYR0vJ4fpWU4IAD3cZ3RQIdMce1c8hXbwNFa--nWtCecovtNTMDKp7_mvONkVn"/>
+</div>
+<!-- Add to Cart CTA -->
+<button class="text-xs font-medium uppercase tracking-wider text-caffiora-brown hover:opacity-75 transition-opacity pt-2">
+              Add to Cart →
+            </button>
+</div>
+<!-- Product Meta Info -->
+<div class="mt-4">
+<h4 class="text-2xl font-editorial-italic text-caffiora-brown font-medium">Mocha Swirl Brew</h4>
+<div class="flex items-center justify-between text-xs mt-2 pt-2 border-t border-caffiora-cream-dark/60">
+<span class="text-caffiora-muted">Rich &amp; Velvety</span>
+<span class="font-editorial-italic text-lg font-bold text-caffiora-brown">$17.00</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col group" data-purpose="product-card">
+<!-- Card Image & Rating -->
+<div class="relative bg-[#E3D9CC]/50 rounded-2xl p-6 pb-4 flex flex-col items-center justify-between min-h-[380px] border border-caffiora-cream-dark/60 group-hover:shadow-md transition-shadow">
+<div class="w-full flex justify-end">
+<span class="inline-flex items-center gap-1 text-xs font-medium text-caffiora-brown">
+                ★ 4.7
+              </span>
+</div>
+<!-- Beverage Visual -->
+<div class="my-auto py-2">
+<img alt="Caramel Cloud Latte" class="w-36 h-48 object-cover rounded-xl mix-blend-multiply group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATTiZ9fDIbzRNlJ54VJb_xxAMsmfrLcdRx5QvXhbJDqorAoHYzqpAfpvtMQesWt4K-BXfRpJHyu2MSDcP1Ne-3u8Em1Zj3Emc2MvHd9ZHeYwUpe6bL4Sf49CUk8HjcM2gOOTWXEhCbAPVMQ5oN0LCBN4NIQl0Hkfp89AWUstcaf9uHfqQQDTeTVZd0YjNwiEJiZ9sqZu6ce1ER-roxMrQl3DjwsD8jv2kOOR_QjdQ-"/>
+</div>
+<!-- Add to Cart CTA -->
+<button class="text-xs font-medium uppercase tracking-wider text-caffiora-brown hover:opacity-75 transition-opacity pt-2">
+              Add to Cart →
+            </button>
+</div>
+<!-- Product Meta Info -->
+<div class="mt-4">
+<h4 class="text-2xl font-editorial-italic text-caffiora-brown font-medium">Caramel Cloud Latte</h4>
+<div class="flex items-center justify-between text-xs mt-2 pt-2 border-t border-caffiora-cream-dark/60">
+<span class="text-caffiora-muted">Smooth &amp; Creamy</span>
+<span class="font-editorial-italic text-lg font-bold text-caffiora-brown">$19.00</span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col group" data-purpose="product-card">
+<!-- Card Image & Rating -->
+<div class="relative bg-[#E3D9CC]/50 rounded-2xl p-6 pb-4 flex flex-col items-center justify-between min-h-[380px] border border-caffiora-cream-dark/60 group-hover:shadow-md transition-shadow">
+<div class="w-full flex justify-end">
+<span class="inline-flex items-center gap-1 text-xs font-medium text-caffiora-brown">
+                ★ 4.8
+              </span>
+</div>
+<!-- Beverage Visual -->
+<div class="my-auto py-2">
+<img alt="Vanilla Drift Cold Brew" class="w-36 h-48 object-cover rounded-xl mix-blend-multiply group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDIpupDF0F_U51cv9qW8hlvpL9bYv3c4lczRiXibCB-OPmlvrmGx9d-SPMNceg0tlBnVp1eF-fHrCL06Ehd0s_4WxBMFLDiCRyNkGuj7EhXssOVI4VdZtAojJ2bZqQM0vcjMi_UEoMfmrnRbz02lTWviydXq5hvFJbeD6OsCu4iBbrD81X7eQMkiJw-Ep_E8llNL_MxvpGhIEinFKoVs5YMVY10xu4pz6MHMfJbIAK"/>
+</div>
+<!-- Add to Cart CTA -->
+<button class="text-xs font-medium uppercase tracking-wider text-caffiora-brown hover:opacity-75 transition-opacity pt-2">
+              Add to Cart →
+            </button>
+</div>
+<!-- Product Meta Info -->
+<div class="mt-4">
+<h4 class="text-2xl font-editorial-italic text-caffiora-brown font-medium">Vanilla Drift Cold Brew</h4>
+<div class="flex items-center justify-between text-xs mt-2 pt-2 border-t border-caffiora-cream-dark/60">
+<span class="text-caffiora-muted">Floral &amp; Balanced</span>
+<span class="font-editorial-italic text-lg font-bold text-caffiora-brown">$18.50</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Pagination Dots -->
+<div class="flex justify-center items-center space-x-2 mt-12">
+<span class="w-6 h-0.5 bg-caffiora-brown rounded-full"></span>
+<span class="w-2 h-0.5 bg-caffiora-brown/30 rounded-full"></span>
+<span class="w-2 h-0.5 bg-caffiora-brown/30 rounded-full"></span>
+</div>
+</section>
+<!-- END: ExploreCollection -->
+<!-- BEGIN: NewsletterSection -->
+<section class="max-w-7xl mx-auto px-6 py-20 relative overflow-hidden" data-purpose="newsletter-section">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+<!-- Text & Form -->
+<div class="z-10">
+<h2 class="text-5xl sm:text-6xl md:text-7xl font-editorial-italic text-caffiora-brown mb-4 tracking-tight">
+            Stay Caffeinated
+          </h2>
+<p class="text-xs sm:text-sm text-caffiora-muted mb-8 max-w-md">
+            Subscribe to our newsletter and get 20% off your first bag.
+          </p>
+<!-- Newsletter Input Form -->
+<form class="flex flex-col sm:flex-row max-w-md gap-2" data-purpose="newsletter-form" onsubmit="event.preventDefault();">
+<input class="flex-1 bg-[#F5EFE6] border border-caffiora-cream-dark rounded-md px-4 py-3 text-xs placeholder:text-caffiora-muted text-caffiora-brown focus:outline-none focus:ring-1 focus:ring-caffiora-brown" placeholder="Enter your email" required="" type="email"/>
+<button class="px-8 py-3 bg-caffiora-brown text-[#ECE4D8] text-xs font-semibold tracking-wider rounded-md hover:bg-caffiora-brown-light transition-colors" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+<!-- Top-Down Latte Swirl Visual Art -->
+<div class="relative flex justify-center lg:justify-end">
+<div class="w-72 sm:w-96 h-72 sm:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-[#F5EFE6]/60">
+<img alt="Artistic top view latte swirl coffee" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACz47vdxAS-48mFs_PKjS-DcW6OktGJ-ZZUqYVIiovFf15Ne0YFUV-JezCEPz7jjiN1e2lSG69pSCjGbrD9INMkzEDv6xdSCY9s5T_gjwAhM99lUfMf_MasNv9Uqk_teSpJqOpyrwhdL5Sy32LzQ7y2RI_YrvtqzSRF1wzON0AY_FaJx_L_T3XIlbCHZM7I0b62UpID7_8N6rXBWtP-u6f4cAaw_OM_cAnGQinIP_m"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: NewsletterSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="border-t border-caffiora-cream-dark bg-[#ECE4D8] pt-12 pb-8 px-6" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 pb-12">
+<!-- Footer Logo -->
+<a class="text-3xl font-editorial-italic text-caffiora-brown" href="#">
+        Caffiora
+      </a>
+<!-- Footer Menu Links -->
+<ul class="flex flex-wrap items-center justify-center gap-8 text-xs font-normal text-caffiora-brown">
+<li><a class="hover:underline" href="#products">Products</a></li>
+<li><a class="hover:underline" href="#features">Features</a></li>
+<li><a class="hover:underline" href="#about">About us</a></li>
+<li><a class="hover:underline" href="#reviews">Reviews</a></li>
+</ul>
+<!-- Social Media Icons -->
+<div class="flex items-center space-x-5 text-caffiora-brown">
+<!-- Instagram -->
+<a aria-label="Instagram" class="hover:opacity-70 transition-opacity" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+<!-- LinkedIn -->
+<a aria-label="LinkedIn" class="hover:opacity-70 transition-opacity" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+</svg>
+</a>
+<!-- X (Twitter) -->
+<a aria-label="X" class="hover:opacity-70 transition-opacity" href="#">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+</svg>
+</a>
+</div>
+</div>
+<!-- Copyright -->
+<div class="text-center text-[11px] text-caffiora-muted tracking-wider border-t border-caffiora-cream-dark/60 pt-6">
+      ©2023 Caffiora. All rights reserved.
+    </div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>
